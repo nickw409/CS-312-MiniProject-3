@@ -10,7 +10,8 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", (req, res) => {
-   res.render("index.ejs", {blogPosts: blogPosts, editPost: editPost});
+   //res.render("index.ejs", {blogPosts: blogPosts, editPost: editPost});
+   res.render("signin.ejs");
 });
 
 app.post("/create", (req, res) => { 
